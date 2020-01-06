@@ -9,7 +9,7 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://github.com/valdisaUI/UIapp
+- ng build --prod --base-href https://valdisaUI.github.io/UIapp/
 deploy:
   provider: pages
   skip_cleanup: true
