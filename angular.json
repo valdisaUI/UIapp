@@ -5,7 +5,11 @@
   "projects": {
     "valdisaPro": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -121,6 +125,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "valdisaPro"
+    }
+  },
+  "defaultProject": "valdisaPro",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
