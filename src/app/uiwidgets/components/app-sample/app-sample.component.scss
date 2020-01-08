@@ -1,0 +1,70 @@
+//--------- Start home-about Area -------------//
+.about-area {
+    position: relative;
+    padding: 150px 0 70px;
+    @media (max-width: 991px) {
+        padding: 20px 0 70px;
+    }
+    .container {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10%;
+            right: 36%;
+            width: 68%;
+            height: 68%;
+            background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
+            background: -webkit-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
+            background: -moz-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
+            background: -ms-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
+            background: -o-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
+            z-index: -1;
+            @media(max-width: 991px) {
+                content: none;
+            }
+        }
+    }
+}
+
+.home-about-left {
+    img {
+        width: 100%;
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.home-about-right {
+    h1 {
+        padding: 20px 0;
+        @media(max-width: 413px) {
+            font-size: 30px;
+            br {
+                display: none;
+            }
+        }
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+.home-about-right2 {
+    @media(max-width: 991px) {
+        margin-top: 50px;
+    }
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    line-height: 1.4em !important; 
+    margin-bottom: 0; 
+    margin-top: 0; 
+    font-weight: 600;
+}
+
+
+
+//--------- End home-about Area -------------//

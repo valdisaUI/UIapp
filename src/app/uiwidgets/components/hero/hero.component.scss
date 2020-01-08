@@ -111,7 +111,7 @@ $black			: #000;
 .home-banner-area {
     background: url(src\assets\img\home-banner-bg.jpg) center;
     background-size: cover;
-    padding: 100px;
+    padding-top: 150px;
     .banner-img {
         text-align: right;
         @media (max-width: 1440px) {
@@ -187,4 +187,18 @@ $black			: #000;
     p {
         margin-bottom: 45px;
     }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    line-height: 1.2em !important; 
+    margin-bottom: 0; 
+    margin-top: 0; 
+    font-weight: 600;
 }
