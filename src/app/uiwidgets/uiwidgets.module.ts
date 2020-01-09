@@ -6,7 +6,9 @@ import { FeatureAreaComponent } from './components/feature-area/feature-area.com
 import { FooterComponent } from './components/footer/footer.component';
 import { AppSampleComponent } from './components/app-sample/app-sample.component';
 import { CompanySectionComponent } from './components/company-section/company-section.component';
-
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -16,10 +18,13 @@ import { CompanySectionComponent } from './components/company-section/company-se
     FeatureAreaComponent, 
     FooterComponent, 
     AppSampleComponent, 
-    CompanySectionComponent
+    CompanySectionComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule 
   ],
   exports : [
     HeroComponent,
@@ -27,7 +32,9 @@ import { CompanySectionComponent } from './components/company-section/company-se
     FeatureAreaComponent,
     FooterComponent,
     AppSampleComponent,
-    CompanySectionComponent 
+    CompanySectionComponent,
+    NavbarComponent,
+    HomeComponent 
   ]
 })
 export class UIwidgetsModule { }
