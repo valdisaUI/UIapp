@@ -10,7 +10,15 @@ const routes: Routes = [
   },
   {
     path : 'login', 
-    loadChildren : './mainViews/login/login/login.module#LoginModule'
+    loadChildren : './mainViews/login/login.module#LoginModule'
+  },
+  {
+    path : 'signup',
+    loadChildren : './mainViews/signup/signup.module#SignModule'
+  },
+  {
+    path : 'institucional',
+    loadChildren : './mainViews/company-signup/company-signup.module#CompanySignupModule'
   }
 ];
 

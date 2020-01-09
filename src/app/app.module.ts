@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UIwidgetsModule } from './uiwidgets/uiwidgets.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
