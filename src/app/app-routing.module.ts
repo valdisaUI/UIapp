@@ -19,6 +19,14 @@ const routes: Routes = [
   {
     path : 'institucional',
     loadChildren : './mainViews/company-signup/company-signup.module#CompanySignupModule'
+  },
+  {
+    path : 'recovery',
+    loadChildren : './mainViews/pass-recovery/pass-recovery.module#PassRecoveryModule'
+  },
+  {
+    path : 'termos',
+    loadChildren : './mainViews/terms-of-use/terms-of-use.module#TermsOfUseModule'
   }
 ];
 
