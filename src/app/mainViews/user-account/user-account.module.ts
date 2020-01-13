@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Route } from '@angular/router';
-import { LoginComponent } from './login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { UserAccountComponent } from './user-account.component';
+import { UIwidgetsModule } from 'src/app/uiwidgets/uiwidgets.module';
+
 
 const routes : Route[] = [
   {
     path : '',
-    component : LoginComponent
+    component : UserAccountComponent
   }
 ]
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [UserAccountComponent],
   imports: [
     CommonModule,
-    ReactiveFormsModule,
+    UIwidgetsModule,
     RouterModule.forChild(routes)
   ]
 })
-export class LoginModule { }
+export class UserAccountModule { }

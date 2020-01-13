@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path : 'termos',
     loadChildren : './mainViews/terms-of-use/terms-of-use.module#TermsOfUseModule'
+  },
+  {
+    path : 'account',
+    loadChildren : './mainViews/user-account/user-account.module#UserAccountModule'
   }
 ];
 

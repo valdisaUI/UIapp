@@ -1,6 +1,8 @@
 <div class="container" id="container">
+
 	<div class="form-container sign-in-container">
-		<form action="#">
+
+		<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 			<h1>Entrar</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
@@ -8,10 +10,10 @@
 				<a href="#" class="social"><i class="fa fa-twitter"></i></a>
 			</div>
 			<span>ou use uma de suas contas no:</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Palavra passe" />
+			<input type="email" formControlName="email" placeholder="Email" required/>
+			<input type="password" formControlName="password" placeholder="Palavra passe" required/>
 			<a routerLink="/recovery">Clique aqui recuperar a palavra passe.</a>
-			<button class="enter">Entrar</button>
+			<button type="submit" [disabled]="!loginForm.valid" class="enter">Entrar</button>
 		</form>
 	</div>
 	<div class="overlay-container">
