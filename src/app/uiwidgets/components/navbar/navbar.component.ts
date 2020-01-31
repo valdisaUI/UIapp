@@ -12,4 +12,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  openResponsiveNav() {
+    alert("hello, world");
+  }
+
 }

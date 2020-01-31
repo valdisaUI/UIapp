@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Route } from '@angular/router';
 import { SignupComponent } from './signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 const routes : Route[] = [
   {
@@ -14,6 +16,7 @@ const routes : Route[] = [
   declarations: [SignupComponent],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ]
 })

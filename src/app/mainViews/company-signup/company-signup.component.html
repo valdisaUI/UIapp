@@ -1,30 +1,47 @@
-<div class="container" id="container">
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Entrar</h1>
-			<span>Preencha os campos abaixo</span>
-            <input type="text" placeholder="Nome" />
-            <input type="text" placeholder="Província" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Crie uma passe" />
-			<a routerLink="/login">Já tenho uma conta</a>
-			<button class="enter">Entrar</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-right">
-				<h1>Particulares</h1>
-				<p>Crie uma conta de particular para estares a par das ofertas, prazos, calendários, concursos, estágios, formações, conferências e muito mais</p>
-                <a class="ghost" id="signUp" routerLink="/signup">conta particular</a>
-			</div>
+<div class="limiter">
+	<div class="container-login100">
+		<div class="wrap-login100">
+			<form class="login100-form validate-form"  (ngSubmit)="onSubmit()">
+				<span class="login100-form-title p-b-26">
+					Conta Empresarial
+				</span>
+				<span class="login100-form-title p-b-48">
+					<i class="zmdi zmdi-font"></i>
+				</span>
+
+				<div class="wrap-input100 validate-input alert-validate" data-validate = "Digite um nome">
+					<input class="input100" type="text" text="Nome" >
+					<span class="focus-input100" data-placeholder="Nome da Empresa"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Insira um número">
+					<input class="input100" type="text" name="pass" >
+					<span class="focus-input100" data-placeholder="Número de telefone"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Insira uma senha">
+					<input class="input100" type="password" name="pass" >
+					<span class="focus-input100" data-placeholder="Insira uma senha"></span>
+				</div>
+				
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button class="login100-form-btn">
+							Criar conta
+						</button>
+					</div>
+				</div>
+
+				<div class="text-center p-t-115">
+					<a class="txt2" routerLink="/login">
+						Já tenho uma conta
+					</a>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
 
-<footer>
-	<p>
-		Leia os nossos termos de uso e política de privacidade
-		<a routerLink="/termos"> clicando aqui</a>.
-	</p>
-</footer>
+
+<div id="dropDownSelect1"></div>

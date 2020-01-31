@@ -1,0 +1,67 @@
+.parentHolder {
+    padding-top : 120px;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    padding-top: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px dotted #eee;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single-sidebar-widget {
+    border: 1px solid #eee;
+    padding: 20px 20px;
+    background: #f9f9ff;
+
+   
+}
+
+.category-title {
+    background: #fff;
+    text-align: center;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.col-lg-9 h1 {
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text] {
+    color: #222222;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    float: left;
+    width: 80%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background: transparent;
+}
+
+button {
+    float: left;
+    width: 20%;
+    padding: 8px;
+    background: transparent;
+    color: #222222;
+    font-size: 17px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+i {
+    color: lightblue;
+}

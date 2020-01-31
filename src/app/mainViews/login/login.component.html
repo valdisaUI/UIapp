@@ -1,35 +1,49 @@
-<div class="container" id="container">
+<div class="limiter">
+	<div class="container-login100">
+		<div class="wrap-login100">
+			<form class="login100-form validate-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+				<span class="login100-form-title p-b-26">
+					Login
+				</span>
+				<span class="login100-form-title p-b-48">
+					<i class="zmdi zmdi-font"></i>
+				</span>
 
-	<div class="form-container sign-in-container">
+				<div class="wrap-input100 validate-input" data-validate = "Exemplo de email válido: a@b.c">
+					<input class="input100" type="text" name="email" formControlName="password">
+					<span class="focus-input100" data-placeholder="Email"></span>
+				</div>
 
-		<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-			<h1>Entrar</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fa fa-google"></i></a>
-				<a href="#" class="social"><i class="fa fa-twitter"></i></a>
-			</div>
-			<span>ou use uma de suas contas no:</span>
-			<input type="email" formControlName="email" placeholder="Email" required/>
-			<input type="password" formControlName="password" placeholder="Palavra passe" required/>
-			<a routerLink="/recovery">Clique aqui recuperar a palavra passe.</a>
-			<button type="submit" [disabled]="!loginForm.valid" class="enter">Entrar</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-right">
-				<h1>Crie uma conta</h1>
-				<p>O primeiro passo para o emprego começa com a criação de uma conta.</p>
-                <a class="ghost" id="signUp" routerLink="/signup">criar conta</a>
-			</div>
+				<div class="wrap-input100 validate-input" data-validate="Digite uma senha">
+					<span class="btn-show-pass">
+						<i class="zmdi zmdi-eye"></i>
+					</span>
+					<input class="input100" type="password" name="pass" formControlName="password">
+					<span class="focus-input100" data-placeholder="Senha"></span>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button class="login100-form-btn" type="submit">
+							Entrar
+						</button>
+					</div>
+				</div>
+
+				<div class="text-center p-t-115">
+					<span class="txt1">
+						Ainda não tem uma conta?
+					</span>
+
+					<a class="txt2" routerLink="/signup">
+						Criar conta
+					</a>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
 
-<footer>
-	<p>
-		Leia os nossos termos de uso e política de privacidade
-		<a routerLink="/termos"> clicando aqui</a>.
-	</p>
-</footer>
+
+<div id="dropDownSelect1"></div>
